@@ -2,13 +2,6 @@ const express = require('express');
 const route = express.Router();
 const Blog = require('../models/blogModel');
 
-
-// Home Page
-route.get('/', (req,res) => {
-    res.render('index');
-});
-
-
 // create form
 route.get('/create', (req, res) => {
     try {
