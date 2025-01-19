@@ -18,6 +18,10 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(methodOverride('_method'))
 app.use(morgan('dev'));
 
+// Home Page
+app.get('/', (req,res) => {
+    res.render('index');
+});
 
 app.use('/api', route);
 
