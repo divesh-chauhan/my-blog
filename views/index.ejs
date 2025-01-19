@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"rel="stylesheet">
+</head>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Background Video -->
+        <video autoplay loop muted class="background_video">
+            <source src="../assets/background.mp4">
+        </video>
+        
+        <!-- Navigation section -->
+        <header class="navigation">
+            <section class="left_section">
+                <h2 class="logo">Blog</h2>
+            </section>
+
+            <section class="middle_section">
+                <div class="links">
+                    <ul>
+                        <li><a href="#about_me">about</a></li>
+                        <li><a href="#blog_services">services</a></li>
+                        <li><a href="/api/create">create</a></li>
+                        <li><a href="/api/blogs">see blogs</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="open_sidebar" onclick="open_sidebar()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!-- Sidebar section -->
+            <div class="sidebar">
+                <span class="close_sidebar" onclick="close_sidebar()">&times;</span>
+
+                <div class="sidebar_links">
+                    <ul>
+                        <li><a href="/api">home</a></li>
+                        <li><a href="/api/create">create</a></li>
+                        <li><a href="/api/blogs">see blogs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social links -->
+                <div class="social_container">
+                    <p>connect with me</p>
+                    <div class="social_links">
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- Hero section -->
+        <div class="hero_container" style="color: white">
+            <h1>Blogger</h1>
+            <div class="para">
+                <p>Loves turning idea's into Reality.</p>
+            </div>
+            <button class="explore_button">let's explore</button>
+        </div>
+    </div>
+
+   <!-- Main Section start -->
+   <main class="main_content">
+
+        <div class="about_section" id="about_me">
+            <!-- About section -->
+            <div class="about_content">
+                <h2>About Me</h2>
+                <p> Hi there ! i'm <span class="my_name">Dinesh Chauhan</span>
+                    a passionate programmer who loves turning ideas into reality through clean,
+                    efficient, and innovative code. I specialize in building web applications, 
+                    software solutions, AI models, etc.that enhance user experiences and solve 
+                    real-world problems. so that's all about me.Thank you so much.
+                    Let's create something amazing together! 
+                </p>
+            </div>
+        </div>
+
+        <h1 id="blog_services" >our blog & services</h1>
+
+        <!-- Contents -->
+        <div class="content_container">
+            <div class="grid">
+                <div class="content_img">
+                    <img src="/assets/content/Business deal-cuate.png" alt="">
+                </div>
+
+                <div class="content">
+                    <p class="heading">Business</p>
+                    <h2 class="title">The Secret to Business Growth.</h2>
+                    <p class="blogs">Success in business requires strategic planning, innovation, and adaptability. Focus on customer needs,
+                        invest in marketing, and embrace technology. Networking and leadership skills play a crucial role in
+                        business expansion. Stay ahead by analyzing market trends, setting clear goals, and maintaining strong
+                        financial management. Growth comes with persistence.
+                </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content_container">
+            <div class="grid">
+
+                <div class="content_img">
+                    <img src="/assets/content/Code typing-rafiki.png" alt="">
+                </div>
+
+                <div class="content">
+                    <p class="heading">Coding</p>
+                    <h2 class="title">Why Coding is Important ?</h2>
+                    <p class="blogs">
+                        Coding is a valuable skill in today’s digital world. It enhances problem-solving abilities, creativity,
+                        and career opportunities. Programming languages like Python and JavaScript are in high demand. Whether
+                        for web development, AI, or app creation, learning to code opens doors to innovation and lucrative job
+                        prospects. Start today! 
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content_container">
+            <div class="grid">
+                <div class="content_img">
+                    <img src="/assets/content/Dumbbell exercise-rafiki.png" alt="">
+                </div>
+
+                <div class="content">
+                    <p class="heading">Exercise</p>
+                    <h2 class="title">Stay Active, Stay Healthy!</h2>
+                    <p class="blogs">Regular exercise improves heart health, boosts immunity, and enhances mood. Activities like running,
+                        swimming, or weightlifting increase endurance and strength. Exercise also reduces stress and promotes
+                        better sleep. Even a 30-minute daily workout can make a significant difference in overall health. Stay
+                        consistent and keep moving for wellness!
+                </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content_container">
+            <div class="grid">
+                <div class="content_img">
+                    <img src="/assets/content/fashion shop-cuate.png" alt="">
+                </div>
+
+                <div class="content">
+                    <p class="heading">Shopping</p>
+                    <h2 class="title">Smart Shopping Hacks You Need.</h2>
+                    <p class="blogs">Plan purchases, compare prices, and use discount coupons to save money. Avoid impulse buying by making a
+                        list and sticking to it. Online deals and cashback offers help reduce costs. Sustainable shopping
+                        choicess support ethical brands. Prioritize quality over quantity for long-term savings and a
+                        clutter-free lifestyle.
+                </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content_container">
+            <div class="grid">
+                <div class="content_img">
+                    <img src="/assets/content/Environment-rafiki.png" alt="">
+                </div>
+
+                <div class="content">
+                    <p class="heading">Plantation & Trees</p>
+                    <h2 class="title">Plant More, Save the Earth.</h2>
+                    <p class="blogs">Trees purify the air, provide oxygen, and combat climate change. Planting trees prevents soil erosion,
+                        conserves water, and supports wildlife. Urban greenery improves mental well-being and reduces pollution.
+                        By planting more trees, we create a sustainable future for generations. Small efforts in afforestation
+                        can make a big impact.
+                </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content_container">
+            <div class="grid">
+                <div class="content_img">
+                    <img src="/assets/content/Fitness stats-bro.png" alt="">
+                </div>
+
+                <div class="content">
+                    <p class="heading">Fitness & Yoga</p>
+                    <h2 class="title">Yoga for a Stronger Body & Mind.</h2>
+                    <p class="blogs">Yoga enhances gridibility, strengthens muscles, and improves posture. It reduces stress, promotes
+                        relaxation, and boosts mental clarity. Practicing yoga daily helps in maintaining balance, increasing
+                        focus, and achieving inner peace. Breath control and meditation improve overall well-being. A few
+                        minutes of yoga daily can transform your life.
+                </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content_container">
+            <div class="grid">
+                <div class="content_img">
+                    <img src="/assets//content/Woman reading-cuate.png" alt="">
+                </div>
+
+                <div class="content" style="margin-bottom: 3rem">
+                    <p class="heading">Reading</p>
+                    <h2 class="title">Why Reading Books Matters?</h2>
+                    <p class="blogs">Reading stimulates the brain, enhances vocabulary, and improves focus. Books provide knowledge, spark
+                        imagination, and reduce stress. Fiction builds empathy, while non-fiction enhances skills. Developing a
+                        reading habit fosters creativity and critical thinking. Whether for learning or relaxation, books are
+                        the key to personal and intellectual growth.
+                </p>
+                </div>
+            </div>
+        </div>
+   </main>
+
+   <!-- Footer section -->
+   <footer>
+       <div class="copyright">
+          &copy; 2025 | Blog All rights reserved.
+       </div>
+   </footer>
+
+    <script>
+        function open_sidebar() {
+            document.querySelector(".sidebar").style.width = "100%";
+            document.body.style.background = "rgba(0,0,0,0.3)"
+        };
+
+        function close_sidebar() {
+            document.querySelector(".sidebar").style.width = "0%";
+            document.body.style.background = ""
+        }
+    </script>
+</body>
+
+</html>

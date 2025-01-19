@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="../styles/viewBlogs.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"rel="stylesheet">
+</head>
+</head>
+<body>
+    <nav>
+        <div class="navigation">
+            <h1>Blogs</h1>
+           <div class="add_blog">
+             <a href="/api/create"><i class="fa-solid fa-plus" title="add a new Blog"></i></a>
+           </div>
+        </div>
+    </nav>
+
+   <main>
+        <div class="blog-container">
+            <div class="grid">
+                <% blogs.forEach(blog => { %>
+                    <div class="blogs">
+                        <p class="author"><%= blog.author %></p>
+                        <h2 class="title"><%= blog.title %></h2>
+                        <p class="content"><%= blog.content %></p><br>
+
+                        <div class="actions">
+                            <a href="/api/blogs/<%= blog.id %>/edit">
+                                <img src="/assets/edit.png" alt="edit png">
+                            </a><br>
+                            <p class="date"><%= blog.createdAt.toDateString()%></p>
+                            <form action="/api/blogs/<%= blog.id %>?_method=DELETE" method="POST">
+                                <button type="submit" title="Delete Blog">
+                                    <img src="/assets/delete.png" alt="delete png">
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+
+    </main>
+    
+    <div class="home">
+        <a href="/api/">Back to Home</a>
+    </div>
+        
+</body>
+</html>
